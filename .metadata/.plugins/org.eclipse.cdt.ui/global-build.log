@@ -1,21 +1,14 @@
-13:26:39 **** Incremental Build of configuration Debug for project 002SizeOf ****
+18:52:03 **** Incremental Build of configuration Debug for project 004LED_toggle_bitfields ****
 make -j4 all 
 arm-none-eabi-gcc "../Src/main.c" -mcpu=cortex-m4 -std=gnu11 -g3 -DDEBUG -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -c -I../Inc -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -fcyclomatic-complexity -MMD -MP -MF"Src/main.d" -MT"Src/main.o" --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -o "Src/main.o"
-arm-none-eabi-gcc -o "002SizeOf.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lenovo/Documents/Embedded-C/My_workspace/target/002SizeOf/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="002SizeOf.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
-Finished building target: 002SizeOf.elf
+arm-none-eabi-gcc -o "004LED_toggle_bitfields.elf" @"objects.list"   -mcpu=cortex-m4 -T"/home/lenovo/Documents/Embedded-C/My_workspace/target/stm32_codes/004LED_toggle_bitfields/STM32F446RETX_FLASH.ld" --specs=nosys.specs -Wl,-Map="004LED_toggle_bitfields.map" -Wl,--gc-sections -static --specs=nano.specs -mfpu=fpv4-sp-d16 -mfloat-abi=hard -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: 004LED_toggle_bitfields.elf
  
-arm-none-eabi-size  002SizeOf.elf 
-arm-none-eabi-objdump -h -S 002SizeOf.elf  > "002SizeOf.list"
+arm-none-eabi-size  004LED_toggle_bitfields.elf 
+arm-none-eabi-objdump -h -S 004LED_toggle_bitfields.elf  > "004LED_toggle_bitfields.list"
    text	   data	    bss	    dec	    hex	filename
-   5228	     92	   1900	   7220	   1c34	002SizeOf.elf
+    832	      0	   1568	   2400	    960	004LED_toggle_bitfields.elf
 Finished building: default.size.stdout
  
-Finished building: 002SizeOf.list
- 
-13:27:50 **** Incremental Build of configuration Debug for project 002SizeOf ****
-make -j4 all 
-arm-none-eabi-size  002SizeOf.elf 
-   text	   data	    bss	    dec	    hex	filename
-   5228	     92	   1900	   7220	   1c34	002SizeOf.elf
-Finished building: default.size.stdout
+Finished building: 004LED_toggle_bitfields.list
  
